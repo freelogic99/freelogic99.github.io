@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelogic.in - The Smart CRM for Freelancers (Coming Soon!)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light, clean background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        /* Header / Hero Section */
+        .hero {
+            background: #007bff; /* A professional blue */
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom-left-radius: 150px 20px; /* Subtle curve */
+            border-bottom-right-radius: 150px 20px; /* Subtle curve */
+        }
+
+        .hero h1 {
+            margin-top: 0;
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero .logo-text {
+            font-weight: bold;
+            /* You could use a simple SVG logo here too */
+        }
+
+        .hero p.tagline {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero .coming-soon {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffdd57; /* A contrasting yellow for emphasis */
+            background-color: rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        /* Email Signup Form */
+        .signup-form {
+            margin-top: 20px;
+        }
+
+        .signup-form input[type="email"] {
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            width: 60%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+
+        .signup-form button {
+            padding: 15px 25px;
+            font-size: 1rem;
+            background-color: #28a745; /* Green for action */
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: -5px; /* To align with the input field */
+        }
+
+        .signup-form button:hover {
+            background-color: #218838;
+        }
+
+        /* Sections Styling */
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #0056b3; /* Darker blue for section headers */
+            margin-bottom: 30px;
+            position: relative;
+        }
+        /* Underline effect for section titles */
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #007bff;
+            margin: 10px auto 0;
+        }
+
+
+        /* Why Freelogic Section */
+        #why-freelogic .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            text-align: left;
+        }
+        #why-freelogic .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            flex-basis: calc(33.333% - 20px); /* Adjust for more items */
+            min-width: 280px; /* Ensure readability on smaller flex items */
+        }
+        #why-freelogic .feature-item h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        /* About Me Section */
+        #about-me {
+            background-color: #e9ecef; /* Slightly different background for this section */
+            padding: 50px 0;
+        }
+
+        #about-me .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left; /* Left align for better readability of bio */
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        #about-me img.profile-pic { /* Placeholder for an optional profile picture */
+            display: block;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            border: 3px solid #007bff;
+            object-fit: cover;
+        }
+        #about-me p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #495057;
+        }
+         #about-me .founder-intro {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #343a40; /* Dark footer */
+            color: #f8f9fa;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Adjustments */
+        @media(max-width: 768px){
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero p.tagline {
+                font-size: 1.1rem;
+            }
+            .signup-form input[type="email"] {
+                width: 100%;
+                max-width: none;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .signup-form button {
+                width: 100%;
+                border-radius: 5px;
+                margin-left: 0;
+            }
+            #why-freelogic .feature-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1><span class="logo-text">Freelogic</span>.in</h1>
+            <p class="tagline">The Smart & Simple CRM Built For Freelancers Like You.</p>
+            <div class="coming-soon">
+                🚀 COMING SOON! 🚀
+            </div>
+            <p>Tired of juggling clients, projects, and invoices? Freelogic is designed to streamline your freelance business, so you can focus on what you do best.</p>
+            <form action="https://api.web3forms.com/submit" method="POST" class="signup-form">
+                <!-- REPLACE WITH YOUR ACTUAL WEB3FORMS ACCESS KEY -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New Freelogic.in Signup!">
+                <input type="hidden" name="from_name" value="Freelogic Signup Form">
+
+                <input type="email" name="email" placeholder="Enter your email to get notified" required>
+                <button type="submit">Notify Me!</button>
+            </form>
+            <p style="font-size:0.9em; opacity:0.8; margin-top:15px;">Be the first to know when we launch and get early access perks!</p>
+          <p style="font-size:0.9em; opacity:0.8; margin-top:15px;">SITE UNDER CONSTRUCTION</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="why-freelogic">
+            <div class="container">
+                <h2>Why Freelogic?</h2>
+                <p style="margin-bottom: 40px; font-size: 1.1em;">Freelogic aims to be your central hub for managing your freelance career, offering intuitive tools for:</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <h3>Client Management</h3>
+                        <p>Keep all your client details, communication logs, and project history in one organized place.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Project Tracking</h3>
+                        <p>Effortlessly track project progress, deadlines, and deliverables. Never miss a beat.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Invoice & Payment Simplicity</h3>
+                        <p>Generate professional invoices quickly and keep track of payments with ease (planned feature).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="container">
+                <h2>Meet the Developer</h2>
+                <div class="about-content">
+                    <!-- Optional: Add your professional photo here -->
+                    <!-- <img src="your-photo.jpg" alt="Srikar Rao Ayilneni" class="profile-pic"> -->
+                    <p class="founder-intro">
+                        Freelogic is being developed by Srikar Rao Ayilneni, a passionate software developer dedicated to creating tools that solve real-world problems.
+                    </p>
+                    <p>
+                        Skilled Software Developer with expertise in Java, Spring Boot, Angular, and AWS.
+                        Experienced in scalable application development and Agile environments.
+                        Holds a B.Tech in Computer Science and has delivered impactful projects,
+                        with accolades in hackathons and leadership roles.
+                    </p>
+                    <p>
+                        Leveraging this extensive experience in building robust and user-friendly applications, Srikar is committed to making Freelogic an indispensable tool for freelancers seeking efficiency and organization.
+                    </p>
+                    <p style="text-align:center; margin-top:20px;">
+                        Connect with Srikar on <a href="https://linkedin.com/in/srikar-ayilneni" target="_blank" rel="noopener noreferrer" style="color:#007bff; font-weight:bold;">LinkedIn</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Freelogic.in by Srikar Rao Ayilneni. All Rights Reserved.</p>
+            <p>Stay tuned for launch! Questions? <a href="mailto:srikarayilneni@gmail.com">Contact Srikar</a>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

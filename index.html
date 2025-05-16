@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikar Rao Ayilneni - Software Developer</title>
+    <style>
+        /* Basic Reset & Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigation (Optional - for single page, can be minimal) */
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background: #0779e4;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0779e4;
+        }
+
+        /* About Section */
+        #about img {
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            width: 150px; /* Adjust as needed */
+            height: 150px; /* Adjust as needed */
+            border: 3px solid #0779e4;
+        }
+        #about p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Skills */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        #skills li {
+            display: inline-block;
+            background: #0779e4;
+            color: #fff;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Experience & Projects & Achievements */
+        .item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .item h4 {
+            color: #555;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        .item .date {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .item ul {
+            padding-left: 20px;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background: #eef;
+            border-left: 5px solid #0779e4;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        .testimonial p {
+            margin: 0 0 10px 0;
+        }
+        .testimonial .client-name {
+            font-weight: bold;
+            text-align: right;
+            color: #555;
+        }
+
+        /* Contact */
+        #contact ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        #contact li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        #contact a {
+            text-decoration: none;
+            color: #0779e4;
+            font-size: 1.1rem;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        /* Responsive (Very Basic Example) */
+        @media(max-width: 768px){
+            .container {
+                width: 90%;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            #skills li {
+                display: block;
+                margin: 5px auto;
+                width: fit-content;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Srikar Rao Ayilneni</h1>
+            <p>Software Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <!-- You can add a professional photo here -->
+            <!-- <img src="your-photo.jpg" alt="Srikar Rao Ayilneni"> -->
+            <h2>About Me</h2>
+            <p>
+                Skilled Software Developer with expertise in Java, Spring Boot, Angular, and AWS.
+                Experienced in scalable application development and Agile environments.
+                Holds a B.Tech in Computer Science and has delivered impactful projects,
+                with accolades in hackathons and leadership roles.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li><li>PostgreSQL</li><li>Spring</li><li>Spring Boot</li>
+                <li>JavaScript</li><li>Python</li><li>Angular</li><li>AWS</li><li>SQL</li>
+                <li>Servlets</li><li>Git</li><li>JPA</li><li>HTML</li><li>CSS</li>
+                <li>RESTful Web Services</li><li>Maven</li><li>EC2</li><li>Lambda</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="item">
+                <h3>FULL-STACK DEVELOPER</h3>
+                <h4>Freelance Consultant</h4>
+                <p class="date">05/2023 - Present</p>
+                <ul>
+                    <li>Designed and built 10+ software solutions, optimizing workflows for logistics, e-commerce, and enterprise clients.</li>
+                    <li>Developed custom websites and applications with dashboards and REST APIs, tailored to client needs.</li>
+                    <li>Collaborated with developers on four projects, debugging code to resolve critical client application issues.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>System Engineer Associate</h3>
+                <h4>Tata Consultancy Services <span style="font-size:0.8em; color: #666;">(Hyderabad)</span></h4>
+                <p class="date">01/2021 - 05/2022</p>
+                <ul>
+                    <li>Developed scalable Java-based applications using Spring Boot, Hibernate, and Microservices architecture.</li>
+                    <li>Designed UI components in Angular, improving user interaction.</li>
+                    <li>Developed a POC to automate deployment emails using GitHub API, integrated as a service within the project.</li>
+                    <li>Deployed REST APIs on AWS, integrating AWS Lambda for serverless execution in an Agile environment.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Software Intern</h3>
+                <h4>Gfonix Enterprise <span style="font-size:0.8em; color: #666;">(Hyderabad)</span></h4>
+                <p class="date">05/2020 - 12/2020</p>
+                <ul>
+                    <li>Developed and maintained a Spring MVC web application for managing product inventory.</li>
+                    <li>Worked closely with the founder on UI/UX and backend enhancements.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Product Developer - Intern</h3>
+                <h4>JHUB <span style="font-size:0.8em; color: #666;">(Hyderabad)</span></h4>
+                <p class="date">05/2019 - 07/2019</p>
+                <ul>
+                    <li>Developed Sparcar, a software product selected for incubation in NASSCOM 10,000 Startups initiative.</li>
+                    <li>Gained hands-on experience in software development, product design, and team collaboration within an incubator environment.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Personal Projects</h2>
+            <div class="item">
+                <h3>Inventory Management App</h3>
+                <p>Built a tool for a local business to track inventory, sales, and supplier data.</p>
+            </div>
+            <div class="item">
+                <h3>Social-Sync API</h3>
+                <p>Developed an API to fetch video descriptions and tags from YouTube and Instagram for content analysis.</p>
+            </div>
+            <div class="item">
+                <h3>Instant Rescue</h3>
+                <p>Built an Android app addressing security issues for women and children.</p>
+            </div>
+            <div class="item">
+                <h3>Event Extraction from Cricket Videos</h3>
+                <p>A deep learning project for extracting cricket match highlights based on umpire pose detection.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial">
+                <p>"Srikar was instrumental in developing our new e-commerce platform. He didn't just build what we asked; he understood our business needs and optimized our workflows significantly. The custom dashboard he created gives us real-time insights that have been invaluable. Highly recommend!"</p>
+                <p class="client-name">- Sarah L., CEO of Bloom & Grow E-commerce</p>
+            </div>
+            <div class="testimonial">
+                <p>"We approached Srikar with a complex challenge for our logistics management system. He delivered a robust and scalable application with well-documented REST APIs that integrated seamlessly with our existing tools. His problem-solving skills and dedication to quality were evident throughout the project."</p>
+                <p class="client-name">- Mark T., Operations Head at SwiftLogistics</p>
+            </div>
+            <div class="testimonial">
+                <p>"Srikar joined our team to help resolve critical issues in an ongoing enterprise project. His ability to quickly understand complex codebases and debug effectively was a game-changer. He collaborated excellently with our developers and contributed significantly to stabilizing the application."</p>
+                <p class="client-name">- Priya S., Project Lead at Innovatech Solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements & Awards</h2>
+            <div class="item">
+                <h3>First Position – EXCITE 2019</h3>
+                <p>Product Engineering Workshop focused on Innovation</p>
+            </div>
+            <div class="item">
+                <h3>Third Position – Smart India Hackathon 2019</h3>
+                <p>India's largest Hackathon League</p>
+            </div>
+            <div class="item">
+                <h3>Runner up – NASA Space Apps Challenge – 2018</h3>
+                <p>Conducted regionally by OMEGAON</p>
+            </div>
+            <h2>Conferences & Courses</h2>
+            <div class="item">
+                <h3>Deep Learning (NPTEL-SWAYAM, IIT Kharagpur)</h3>
+                <p>Full Professional Proficiency</p>
+            </div>
+            <div class="item">
+                <h3>The Joy of Computing Using Python (NPTEL, IIT Ropar)</h3>
+                <p>95% - Silver Medal, Full Professional Proficiency</p>
+            </div>
+            <div class="item">
+                <h3>Applied Data Science (World Quant University)</h3>
+                <p>Full Professional Proficiency</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                <h4>JNTUH College of Engineering</h4>
+                <p class="date">2016 - 2020</p>
+                <p>CGPA: 7.5</p>
+            </div>
+        </div>
+    </section>
+
+     <section id="volunteer">
+        <div class="container">
+            <h2>Volunteer Experience</h2>
+            <div class="item">
+                <h3>Student Coordinator - JHUB, JNTUH College</h3>
+            </div>
+            <div class="item">
+                <h3>Technical Coordinator - CRESCENCE 2k19 (JNTUHCEJ)</h3>
+            </div>
+            <div class="item">
+                <h3>Volunteer - Netra Vidyalaya (Assisted visually impaired students)</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <ul>
+                <li><a href="mailto:srikarayilneni@gmail.com">srikarayilneni@gmail.com</a></li>
+                <li><a href="https://linkedin.com/in/srikar-ayilneni" target="_blank">LinkedIn</a></li>
+                <!-- Add GitHub Profile Link if you have one -->
+                <li><a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a></li>
+                <li>Phone: 9666333375</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Srikar Rao Ayilneni. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

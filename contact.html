@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Policies - Freelogic.in</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light, clean background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        /* Header / Hero Section */
+        .hero {
+            background: #007bff; /* A professional blue */
+            color: #fff;
+            padding: 50px 20px; /* Slightly less padding than index hero */
+            text-align: center;
+            border-bottom-left-radius: 150px 20px; /* Subtle curve */
+            border-bottom-right-radius: 150px 20px; /* Subtle curve */
+        }
+
+        .hero h1 {
+            margin-top: 0;
+            font-size: 2.5rem; /* Adjusted size */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero .logo-text {
+            font-weight: bold;
+        }
+
+        .hero p.tagline {
+            font-size: 1.2rem; /* Adjusted size */
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        /* Sections Styling */
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #0056b3; /* Darker blue for section headers */
+            margin-bottom: 30px;
+            position: relative;
+        }
+        /* Underline effect for section titles */
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #007bff;
+            margin: 10px auto 0;
+        }
+
+        /* Contact Details & Policy Links Styling */
+        .contact-info, .policy-links {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            max-width: 700px;
+            margin: 0 auto 30px auto; /* Center and add bottom margin */
+            text-align: left;
+        }
+
+        .contact-info p, .policy-links p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        .contact-info ul, .policy-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li, .policy-links li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .contact-info a, .policy-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover, .policy-links a:hover {
+            text-decoration: underline;
+        }
+        .contact-info .icon { /* For potential icons next to links */
+            margin-right: 8px;
+        }
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #343a40; /* Dark footer */
+            color: #f8f9fa;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Adjustments */
+        @media(max-width: 768px){
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p.tagline {
+                font-size: 1rem;
+            }
+            .contact-info, .policy-links {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1><span class="logo-text">Freelogic</span>.in</h1>
+            <p class="tagline">Contact & Support Information</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-page-content">
+            <div class="container">
+                
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>If you have any questions, feedback, or need support regarding Freelogic.in, please don't hesitate to reach out. We aim to respond to inquiries as promptly as possible.</p>
+                    <ul>
+                        <li> <!-- You can add an envelope icon here if you use an icon library -->
+                            <strong>Email:</strong> <a href="mailto:srikarayilneni@gmail.com">srikarayilneni@gmail.com</a>
+                        </li>
+                        <li> <!-- You can add a LinkedIn icon here -->
+                            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/srikar-ayilneni" target="_blank" rel="noopener noreferrer">Srikar Rao Ayilneni</a>
+                        </li>
+                    </ul>
+                    <p>For urgent matters or specific project support as Freelogic evolves, dedicated support channels will be established and detailed here.</p>
+                </div>
+
+                <div class="policy-links">
+                    <h2>Important Information & Policies</h2>
+                    <p>Please review the following documents for details on how we operate, manage your data, and the terms of using our services (once launched):</p>
+                    <ul>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a> - How we collect, use, and protect your personal information.
+                        </li>
+                        <li>
+                            <a href="terms-conditions.html">Terms & Conditions</a> - The rules and guidelines for using Freelogic.in.
+                        </li>
+                        <li>
+                            <a href="support.html">Support Details</a> - Information on how to get help and our support scope.
+                        </li>
+                        <!-- You can add a link to a Shipping Policy or Refund Policy here if they become relevant for your CRM -->
+                        <!-- 
+                        <li>
+                            <a href="refund-policy.html">Refund Policy</a> - Our policy on refunds for services.
+                        </li>
+                        -->
+                    </ul>
+                     <p style="font-size: 0.9em; color: #555; margin-top: 20px;">
+                        These policies will be particularly relevant as Freelogic.in launches and begins to offer its services.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Freelogic.in by Srikar Rao Ayilneni. All Rights Reserved.</p>
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="terms-conditions.html">Terms & Conditions</a> |
+                <a href="support.html">Support</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
